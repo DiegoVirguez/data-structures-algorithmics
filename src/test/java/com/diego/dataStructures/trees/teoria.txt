@@ -1,0 +1,17 @@
+Arboles
+
+- arboles bianrios: lo que tienen dos hijos
+- Si un arbol esta ordenado es super rapido encontrar un dato porque ya sabemos por que rama coger
+- los arboles balaciados son los que tienen el mismo numero de hijos a la derecha y a la izquierda.
+- para insertar en un arbol balanceado insetar y buscar toma O(log(n)).
+- si el arbol esta desbalanceado toma o(n) buscar e insertar, dado que se parece mas a una lista
+
+Traversing
+
+Preorder:  root, left, then right
+Inorder:   left, root, right
+Postorder: left, right, root
+
+- Lo mas comun de usar es el inorder porque asi se puede imprimir en order un binario
+
+

@@ -1,0 +1,8 @@
+
+    - en un array los elemntos estan idexados y puedo  acceder rapido a ellos
+    - en linked list se empieza por la head y se va agregando uno a uno (linear time)
+
+Ventajas y desventajas
+
+    - insertion and deletions can be very quick (constan time) si insertion and deletino from the begining of the linkedlist
+    - si lo agrego al final tendria que recorrer all la lista y seria linear time
