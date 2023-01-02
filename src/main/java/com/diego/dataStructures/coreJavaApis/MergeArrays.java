@@ -1,11 +1,10 @@
-package com.diego.dataStructures.arrays;
+package com.diego.dataStructures.coreJavaApis;
 
 /*
  * [0,3,4,31] - [4,6,30]
  * */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
