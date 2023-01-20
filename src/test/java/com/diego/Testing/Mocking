@@ -1,0 +1,3 @@
+- el mock siempre va a estar vacio
+- when(databaseMock.isAvailable()).thenReturn(true); - para agregarlos valores al mock
+-

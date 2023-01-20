@@ -1,0 +1,38 @@
+
+public class Primate {
+   public boolean hasHair() {
+      return true;
+   }
+}
+
+public interface HasTail {
+   public abstract boolean isTailStriped();
+}
+
+public class Lemur extends Primate implements HasTail {
+   public boolean isTailStriped() {
+      return false;
+   }
+   public int age = 10;
+   public static void main(String[] args) {
+      Lemur lemur = new Lemur();
+      System.out.println(lemur.age);
+
+      HasTail hasTail = lemur;
+      System.out.println(hasTail.isTailStriped());
+
+      Primate primate = lemur;
+      System.out.println(primate.hasHair());
+   }
+}
+
+a Java object may be accessed using a reference with the same type as the object,
+ a reference that is a superclass of the object,
+ or a reference that defines an interface the object implements, either directly or through a superclass.
+
+ supertipo (clase padre o interfaz) = lemur
+
+ - all objects are accessed by reference, so as a developer you never have direct access to the object itself.
+ - solo puedo tener accesos por los supertipos
+ - un objeto nunca cambia en memoria
+ - dependienod del tipo de la referencia, solo tengo acceso a eso

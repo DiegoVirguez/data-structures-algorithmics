@@ -1,0 +1,43 @@
+- we can only verify whether that method is being called or not.
+- verify() method which lets us verify whether the mock void method is being called or not.
+- It lets us check the number of methods invocations.
+  So if the method invocation returns to be zero we would know that our mock method is not being called.
+- verify(publishing,times(1)).publishInformation(person) (publishing es la class )
+
+
+public class Information {
+
+   private final Publishing publishing;  -- the dependency
+
+   public Information(Publishing publishing) {
+       this.publishing = publishing;
+   }
+
+   public void sendInfoForPublishing(Person person) {
+       publishing.publishInformation(person);
+   }
+}
+
+public class Publishing {
+
+   public void publishInformation(Person person) {
+       System.out.println(person);
+   }
+}
+
+public class InformationTest {
+
+   Publishing publishing = mock(Publishing.class); --always mock the dependency
+
+   @Autowired
+   private Information information; -- esto tambien se podria con un new
+
+   @Test
+   void whenSendInformationForPublishingIsSuccessful() {
+       information = new Information(publishing);
+       Person person = ObjectCreator.getPerson();
+       doNothing().when(publishing).publishInformation(person);
+       information.sendInfoForPublishing(person);
+       verify(publishing,times(1)).publishInformation(person);
+   }
+}

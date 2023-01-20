@@ -1,10 +1,24 @@
 Arboles
 
-- arboles bianrios: lo que tienen dos hijos
+- arboles binarios: lo que tienen dos hijos
 - Si un arbol esta ordenado es super rapido encontrar un dato porque ya sabemos por que rama coger
-- los arboles balaciados son los que tienen el mismo numero de hijos a la derecha y a la izquierda.
-- para insertar en un arbol balanceado insetar y buscar toma O(log(n)).
+- los arboles balanciados son los que tienen el mismo numero de hijos a la derecha y a la izquierda.
+- para insertar en un arbol balanceado: instart y buscar toma O(log(n)).
 - si el arbol esta desbalanceado toma o(n) buscar e insertar, dado que se parece mas a una lista
+
+Tipos de arboles:
+- Arbol binario
+- Binary search tree:  desendientes izquierda < n < desendentes derecho
+- Balanced tree : árbol binario está balanceado cuando todos sus niveles, excepto el último, están integrados a la máxima capacidad de nodos - balanced to achieve o(log n) foor insert and find.
+- complete binary tree: Se dice que un árbol binario de altura k está completo si está lleno hasta altura k-1 y el último nivel esta ocupado de izquierda a derecha.
+- full binary tree: todos los nodos tienen cero o dos hijos
+- perfect binary tree: full y completo
+
+Transversing
+
+Assumptions
+
+se asume que se tiene un arbol binario balanceado
 
 Traversing
 
