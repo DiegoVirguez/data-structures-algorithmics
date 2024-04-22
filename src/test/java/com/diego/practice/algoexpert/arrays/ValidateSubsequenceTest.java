@@ -1,4 +1,4 @@
-package com.diego.practice.algoexpert.subsequences;
+package com.diego.practice.algoexpert.arrays;
 
 import org.junit.jupiter.api.Test;
 

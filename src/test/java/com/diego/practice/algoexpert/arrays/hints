@@ -1,0 +1,7 @@
+- el subsequence es un concepto importante en las code interview
+- colocar un pointer en cada arreglo
+
+- es mejor posicionar los valores antes en vez de ordenarlos. Asi me
+ahorro complejidad de tiempo
+
+ -  que pasa si tengo un o(n) y por dentro un log (n)
